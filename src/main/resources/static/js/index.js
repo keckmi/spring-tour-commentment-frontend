@@ -14,6 +14,7 @@ $(document).ready(function() {
 				td.append($("<div class='lead' />").text(data[i].title));
 				td.append($("<div />").text(data[i].comment));
 				td.append($("<div class='small text-muted' />").text(data[i].date + " von " + data[i].commenter));
+				td.append($("<a href='edit.html?id="+i+"' id='"+i+"' class='btn btn-default'>edit</a>"));
 				
 				tr.append(td);
 				$("#content").append(tr);
